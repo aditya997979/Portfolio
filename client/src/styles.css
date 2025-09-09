@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: light;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: theme('colors.background');
+	color: theme('colors.foreground');
+	font-family: theme('fontFamily.body');
+}
+
+[id] {
+	scroll-margin-top: 96px; /* prevent content from hiding under navbar */
+}
+
+.prose h2 {
+	@apply mb-4;
+}
+
+
